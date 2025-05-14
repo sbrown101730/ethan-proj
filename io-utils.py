@@ -271,3 +271,26 @@ def export_tiff_stack(fn, vol, dtype = np.uint8, dim = 2, slice_origin = 0, verb
 #                datasets[ds_name] = ds_dict
 #
 #        return 
+
+
+
+""" # TIFF ATTEMPT
+
+# trying on a tiff from before
+if __name__ == "__main__":
+    # set the paths 
+    input_path = r"C:\Users\Siya\Documents\MATLAB\WT_Study\OdamWT-56F01R (Cropped)-002.tiff" # old tiff, i don't remember if it's clean or not, just trying to test
+    output_path = r"C:\Users\Siya\Documents\MATLAB\WT_Study\output_test.tiff"
+
+    # load the tiff volume as a numpy array
+    volume = load_multipage_tiff(input_path)
+
+    # try and check shape and data type
+    print("shape:", volume.shape)
+    print("data type:", volume.dtype)
+
+    # export to new tiff
+    export_multipage_tiff(output_path, volume)
+
+    print("output saved to:", output_path)
+# works! """
